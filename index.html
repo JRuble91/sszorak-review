@@ -15,6 +15,10 @@ h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size
 .cards { display: grid; gap: 14px; }
 a.card { display: block; text-decoration: none; color: inherit; background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; padding: 18px 20px; transition: transform .15s, box-shadow .15s; }
 a.card.heal { border-left-color: var(--accent2); }
+a.card.kill { border-left-color: #c9a227; background: linear-gradient(135deg, rgba(201,162,39,.12), transparent 60%), var(--panel); }
+a.card.kill h2 { font-size: 22px; }
+a.card.kill .go { color: #a8841a; }
+@media (prefers-color-scheme: dark) { a.card.kill .go { color: #f2cd3c; } }
 a.card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.08); }
 a.card h2 { margin: 0 0 6px; font-size: 19px; }
 a.card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
@@ -26,8 +30,23 @@ footer { margin-top: 28px; color: var(--muted); font-size: 12px; line-height: 1.
 <body>
 <main>
   <h1>Sszorak Mythic · raid reviews</h1>
-  <div class="sub">Reawaken · built from our Warcraft Logs and Wipefest data.</div>
+  <div class="sub">Reawaken · built from our Warcraft Logs and Wipefest data. <b>Sszorak killed Thursday, Nov 5, on pull 221.</b></div>
   <div class="cards">
+    <a class="card kill" href="sszorak-thursday-nov5-kill.html">
+      <h2>Thursday, Nov 5 · The Kill</h2>
+      <p>Pull 221, 6:24. A deep dive on the kill: the whole fight on one chart, what we did right (survival, tornadoes, every Fury pop, the cooldown plan, rezzes, defensives, damage), every death, every cooldown and every player.</p>
+      <span class="go">Open the kill breakdown →</span>
+    </a>
+    <a class="card" href="sszorak-thursday-nov5-review.html">
+      <h2>Thursday, Nov 5 · Review + Replay</h2>
+      <p>18 pulls and the kill on pull 18. The problems behind the 17 wipes before it, what ended each pull, the wipe map, your own report card, and a replay of every pull including the kill.</p>
+      <span class="go">Open the Nov 5 review →</span>
+    </a>
+    <a class="card" href="sszorak-every-pull-review.html">
+      <h2>Every pull · Oct 15 to Nov 5</h2>
+      <p>All 221 pulls from all seven nights, from the first pull to the kill. The biggest problems across every wipe, how each one changed night by night, and a replay of every pull.</p>
+      <span class="go">Open the every-pull review →</span>
+    </a>
     <a class="card" href="sszorak-tuesday-nov3-review.html">
       <h2>Tuesday, Nov 3 · Review + Replay</h2>
       <p>39 pulls, best pull 27.8% (our best yet). The biggest problems ranked first, then what ended our pulls, the wipe map, your own report card, and a top-down replay of every pull.</p>
@@ -37,11 +56,6 @@ footer { margin-top: 28px; color: var(--muted); font-size: 12px; line-height: 1.
       <h2>Tuesday, Nov 3 · Healer Review</h2>
       <p>For healers. What changed since Thursday (Spirit Link on the stack, the third pop, healer deaths), the new fourth Fury pop, the cooldown plan for all 39 pulls, and a report for each healer.</p>
       <span class="go">Open the Nov 3 healer review →</span>
-    </a>
-    <a class="card" href="sszorak-every-pull-review.html">
-      <h2>Every pull · Oct 15 to Nov 3</h2>
-      <p>All 203 pulls from all six nights in one log. The biggest problems across every wipe ranked first, how each one has changed night by night, and a replay of every pull.</p>
-      <span class="go">Open the every-pull review →</span>
     </a>
     <a class="card" href="sszorak-thursday-oct29-review.html">
       <h2>Thursday, Oct 29 · Review + Replay</h2>
